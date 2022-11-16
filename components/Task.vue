@@ -1,11 +1,11 @@
 <template>
   <div :class="`task ${task.done ? 'is-complete' : ''}`">
     <div class="content">
-       `{{ task.content }}``
+       {{ task.content }}
     </div>
     <div class="buttons">
         <button>
-           `{{ task.done ? 'Undo' : 'Done' }}`
+           {{ task.done ? 'Undo' : 'Done' }}
         </button>
         <button class="delete">Delete</button>
     </div>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-
+    props: ['task']
 }
 </script>
 
