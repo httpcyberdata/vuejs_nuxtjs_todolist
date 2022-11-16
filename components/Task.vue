@@ -7,6 +7,7 @@
         <button>
            `{{ task.done ? 'Undo' : 'Done' }}`
         </button>
+        <button class="delete">Delete</button>
     </div>
   </div>
 </template>

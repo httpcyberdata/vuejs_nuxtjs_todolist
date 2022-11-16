@@ -14,10 +14,11 @@
     <div class="tasks">
       <!-- Component -->
       <Task 
-        v-for=(task, i) in $store.state.tasks"
+        v-for="(task, i) in $store.state.tasks"
         :key="i"
         :task="task"
         />
+
     </div>
   </main>
 </template>
